@@ -1,0 +1,21 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="social-media-list-wrapper">
+        <ul class="social-media-list">
+          {% if page.fb_name %}
+          <li>
+            {% include icon-facebook.html fb_name=page.fb_name fb_id=page.fb_id %}
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+
+      <div class="copyright-notice">
+          2017 Rok majora Dybowskiego
+      </div>
+    </div>
+  </div>
+</footer>

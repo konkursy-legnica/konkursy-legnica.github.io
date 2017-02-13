@@ -1,0 +1,1 @@
+{% assign url_lvl = include.url | split: "/" | join: " " | number_of_words %}

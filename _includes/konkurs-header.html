@@ -1,0 +1,92 @@
+<header class="site-header" role="banner">
+
+  <div class="wrapper">
+
+    {% include get-url-part url=page.url %}
+    {% case url_part %}
+      {% when 'plastyczny' %}
+          <div class="baner-konkursy">
+            <div id="konkursy-rok">Konkurs Plastyczny</div>
+          </div>
+          {% assign main_title = "Konkurs Plastyczny" %}
+          {% capture news_ret_url %}/konkurs-plastyczny.html{% endcapture %} 
+
+      {% when 'muzyka-wykleta' %}
+          <div class="baner-konkursy">
+            <div id="konkursy-rok">Muzyka Wyklęta</div>
+          </div>
+          {% assign main_title = "Muzyka Wyklęta" %}
+          {% capture news_ret_url %}/muzyka-wykleta.html{% endcapture %} 
+      {% else %}
+        <div class="baner-konkursy">
+          <div id="konkursy-rok">{{ page.title }}</div>
+        </div>
+    {% endcase %}
+
+    <nav class="site-nav">
+      <div class="trigger">
+        <a class="page-link" href="{{ site.url }}">Strona główna</a>
+        {% for my_page in site.pages %}
+        {% if my_page.title %}
+        {% assign nest_lvl =  my_page.url | split: "/" | join: " " | number_of_words %}
+        {% if nest_lvl <= 1 %}
+        {% if my_page.title != page.title %}
+        {% if main_title != my_page.title %}
+        <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+        {% endif %}
+        {% endif %}
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+      </div>
+    </nav>
+    <nav class="site-nav">
+      <div class="trigger">
+        {% include get-url-lvl url=page.url %}
+        {% if url_lvl > 1 %}
+          <a class="page-link" href="{{ news_ret_url }}">Aktualności</a>
+        {% endif %}
+
+        {% for my_page in site.pages %}
+        {% if my_page.title %}
+          {% capture title_last_word %}{{ page.title | split: " " | last | downcase }}{% endcapture %}
+          {% include get-url-part url=my_page.url %}
+          {% assign my_page_url_part = url_part %}
+          {% include get-url-part url=page.url %}
+          {% include get-url-lvl url=my_page.url %}
+
+          {% if url_lvl > 1 %}
+            {% if url_part contains my_page_url_part %}
+                  {% unless my_page.title == page.title %}
+                    <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                  {% endunless %}
+            {% endif %}
+
+          {% endif %}
+
+        {% endif %}
+        {% endfor %}
+
+        {% if page.fb_id %}
+          {% capture fbid %}{{ page.fb_id }}{% endcapture %}
+        {% else %}
+          {% capture fbid %}100015251559033{% endcapture %}
+        {% endif %}
+
+        {% if page.fb_name %}
+          {% capture fbname %}{{ page.fb_name }}{% endcapture %}
+        {% else %}
+          {% capture fbname %}{{ main_title }}{% endcapture %}
+        {% endif %}
+
+        <span class="fb-in-nav">
+          {% include icon-facebook.html fb_id=fbid fb_name=fbname %}
+        </span>
+
+      </div>
+    </nav>
+
+
+  </div>
+
+</header>
