@@ -1,5 +1,6 @@
 <a class="icon-link" href="https://facebook.com/profile.php?id={{ include.fb_id }}">
-  <img src="{{ site.url }}/img/fb_50.png"/>
+  {{ site.imagesurl | relative_url }}{{ site.fbiconurl }}
+  <img src="{{ site.imagesurl | relative_url }}{{ site.fbiconurl }}"/>
 </a>
 <a href="https://facebook.com/profile.php?id={{ include.fb_id }}">
   <span>{{ include.fb_name }}</span>

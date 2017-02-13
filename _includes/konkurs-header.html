@@ -9,14 +9,14 @@
             <div id="konkursy-rok">Konkurs Plastyczny</div>
           </div>
           {% assign main_title = "Konkurs Plastyczny" %}
-          {% capture news_ret_url %}/konkurs-plastyczny.html{% endcapture %} 
+          {% capture news_ret_url %}/konkurs-plastyczny.html{% endcapture %}
 
       {% when 'muzyka-wykleta' %}
           <div class="baner-konkursy">
             <div id="konkursy-rok">Muzyka Wyklęta</div>
           </div>
           {% assign main_title = "Muzyka Wyklęta" %}
-          {% capture news_ret_url %}/muzyka-wykleta.html{% endcapture %} 
+          {% capture news_ret_url %}/muzyka-wykleta.html{% endcapture %}
       {% else %}
         <div class="baner-konkursy">
           <div id="konkursy-rok">{{ page.title }}</div>
@@ -25,7 +25,7 @@
 
     <nav class="site-nav">
       <div class="trigger">
-        <a class="page-link" href="{{ site.url }}">Strona główna</a>
+        <a class="page-link" href="{{ "index.html" | relative_url }}">Strona główna</a>
         {% for my_page in site.pages %}
         {% if my_page.title %}
         {% assign nest_lvl =  my_page.url | split: "/" | join: " " | number_of_words %}
@@ -44,7 +44,7 @@
       <div class="trigger">
         {% include get-url-lvl url=page.url %}
         {% if url_lvl > 1 %}
-          <a class="page-link" href="{{ news_ret_url }}">Aktualności</a>
+          <a class="page-link" href="{{ news_ret_url | relative_url }}">Aktualności</a>
         {% endif %}
 
         {% for my_page in site.pages %}

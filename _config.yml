@@ -21,8 +21,10 @@ description: > # this means to ignore newlines until "baseurl:"
   o wszystkich konkursach. Prezentowanie aktualności. Udostępnianie regulaminów,
   kart zgłoszeniowych, oraz materiałów multimedialnych związanych z konkursami.
   Zostaną tu również ogłoszone ich wyniki.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/stronka" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+imagesurl: "/img"
+fbiconurl: "/fb_50.png"
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
