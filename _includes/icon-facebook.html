@@ -1,7 +1,6 @@
-<a class="icon-link" href="https://facebook.com/profile.php?id={{ include.fb_id }}">
-  {{ site.imagesurl | relative_url }}{{ site.fbiconurl }}
+<a class="icon-link" href="https://facebook.com/profile.php?id={{ include.fb_id }}" {{ site.target_blank }}>
   <img src="{{ site.imagesurl | relative_url }}{{ site.fbiconurl }}"/>
 </a>
-<a href="https://facebook.com/profile.php?id={{ include.fb_id }}">
+<a href="https://facebook.com/profile.php?id={{ include.fb_id }}" {{ site.target_blank }}>
   <span>{{ include.fb_name }}</span>
 </a>

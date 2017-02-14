@@ -1,26 +1,32 @@
 <header class="site-header" role="banner">
 
   <div class="wrapper">
+    {% assign main_pages = site.pages | where:"dir", "/" %}
+    {% assign sub_pages_plastyczny = site.pages | where:"dir", site.plastdir | sort: 'priorytet_menu' %}
+    {% assign sub_pages_muzyka = site.pages | where:"dir", site.muzdir | sort: 'priorytet_menu' %}
 
-    {% include get-url-part url=page.url %}
-    {% case url_part %}
-      {% when 'plastyczny' %}
-          <div class="baner-konkursy">
-            <div id="konkursy-rok">Konkurs Plastyczny</div>
-          </div>
+    {% assign url_first_part = page.url | remove_first: "/" | split: "/" | first | prepend: "/" %}
+    {% case url_first_part %}
+      {% when site.plasturl %}
+          {% include title-baner.html text="Konkurs Plastyczny" %}
           {% assign main_title = "Konkurs Plastyczny" %}
+          {% assign lower_nav_pages = sub_pages_plastyczny%}
           {% capture news_ret_url %}/konkurs-plastyczny.html{% endcapture %}
 
-      {% when 'muzyka-wykleta' %}
-          <div class="baner-konkursy">
-            <div id="konkursy-rok">Muzyka Wyklęta</div>
-          </div>
+      {% when site.muzurl %}
+          {% include title-baner.html text="Muzyka Wyklęta" %}
           {% assign main_title = "Muzyka Wyklęta" %}
+          {% assign lower_nav_pages = sub_pages_muzyka%}
           {% capture news_ret_url %}/muzyka-wykleta.html{% endcapture %}
+
       {% else %}
-        <div class="baner-konkursy">
-          <div id="konkursy-rok">{{ page.title }}</div>
-        </div>
+        {% include title-baner.html text=page.title %}
+        {% case page.title %}
+        {% when "Konkurs Plastyczny" %}
+          {% assign lower_nav_pages = sub_pages_plastyczny %}
+        {% when "Muzyka Wyklęta" %}
+          {% assign lower_nav_pages = sub_pages_muzyka %}
+        {% endcase %}
     {% endcase %}
 
     <nav class="site-nav">
@@ -40,31 +46,17 @@
         {% endfor %}
       </div>
     </nav>
-    <nav class="site-nav">
+    <nav class="site-nav lower-nav">
       <div class="trigger">
         {% include get-url-lvl url=page.url %}
         {% if url_lvl > 1 %}
           <a class="page-link" href="{{ news_ret_url | relative_url }}">Aktualności</a>
         {% endif %}
 
-        {% for my_page in site.pages %}
-        {% if my_page.title %}
-          {% capture title_last_word %}{{ page.title | split: " " | last | downcase }}{% endcapture %}
-          {% include get-url-part url=my_page.url %}
-          {% assign my_page_url_part = url_part %}
-          {% include get-url-part url=page.url %}
-          {% include get-url-lvl url=my_page.url %}
-
-          {% if url_lvl > 1 %}
-            {% if url_part contains my_page_url_part %}
-                  {% unless my_page.title == page.title %}
-                    <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-                  {% endunless %}
-            {% endif %}
-
-          {% endif %}
-
-        {% endif %}
+        {% for my_page in lower_nav_pages %}
+          {% unless my_page.title == page.title %}
+            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+          {% endunless %}
         {% endfor %}
 
         {% if page.fb_id %}

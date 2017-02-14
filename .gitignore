@@ -5,3 +5,4 @@ example/_site
 Gemfile.lock
 .jekyll-metadata
 *.gem
+debug.html

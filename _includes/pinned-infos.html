@@ -1,0 +1,13 @@
+{% capture page_name_without_ext %}{{ page.name | split: "." | first }}{% endcapture %}
+
+{% for html_file in site.static_files %}
+  {% if html_file.path contains "pinned" %}
+    {% if html_file.path contains page_name_without_ext %}
+      {% include_relative {{ html_file.path }} %}
+    {% endif %}
+
+    {% if page_name_without_ext == "index" %}
+      {% include_relative {{ html_file.path }} %}
+    {% endif %}
+  {% endif %}
+{% endfor %}

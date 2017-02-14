@@ -1,1 +1,1 @@
-{% assign url_part = include.url | remove_first: "/" | split: "/" | first %}
+{% assign url_part = include.url | remove_first: "/" | split: "/" | first | prepend: "/" %}
