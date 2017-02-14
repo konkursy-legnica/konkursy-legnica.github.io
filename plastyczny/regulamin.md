@@ -3,6 +3,9 @@ title: Regulamin
 layout: konkurs
 priorytet_menu: 2
 ---
+
+[Pobierz regulamin w formacie PDF]({{ site.filesurl | relative_url }}/regulamin-konkursu-plastycznego.pdf)
+
 # REGULAMIN KONKURSU PLASTYCZNEGO
 
 <h3>
@@ -49,18 +52,21 @@ z okazji roku Majora Władysława Dybowskiego w Legnicy
 
     **Miejsca zgłaszania i przynoszenia prac:**
 
-     * <span class="regulamin-adres">Spółdzielczy Dom Kultury "Kopernik", Legnica ul.
-    Koziorożca 9 </span><span class="regulamin-tel">(tel. 76 72-30-982)</span>
-     * <span class="regulamin-adres">Młodzieżowe Centrum Kultury ul. Mickiewicza 3</span>
+     * <span class="regulamin-adres">[Spółdzielczy Dom Kultury "Kopernik", Legnica ul.
+    Koziorożca 9 ](https://www.facebook.com/SDK.Kopernik/)</span><span class="regulamin-tel">(tel. 76 72-30-982)</span>
+     * <span class="regulamin-adres">[Młodzieżowe Centrum Kultury ul. Mickiewicza 3](http://www.mck.art.pl/)</span>
     <span class="regulamin-tel">(tel. 76 72 333 40)</span>.
 
-    **Prezentacja prac** odbędzie się w Spółdzielczym Domu Kultury
-    "Kopernik", Legnica ul. Koziorożca 9 po zakończeniu konkursu oraz na na naszych stronach:
+    **Prezentacja prac** odbędzie się w  
 
-      * [Konkursy Legnica]({{ site.url }}/konkurs-plastyczny.html)
+      * [Spółdzielczym Domu Kultury"Kopernik", Legnica ul. Koziorożca 9](https://www.facebook.com/SDK.Kopernik/)  
+
+    po zakończeniu konkursu oraz na na naszych stronach:
+
+      * [Konkursy Legnica]({{ "" | relative_url }}/konkurs-plastyczny.html)
       * {% include icon-facebook.html fb_name="Konkurs Plastyczny" fb_id="100015251559033" %}
 
-2. Zasady uczestnictwa
+2. **Zasady uczestnictwa**
 
     1. Uczestnictwo w konkursie oznacza akceptację wszystkich postanowień tego
     regulaminu.
@@ -74,7 +80,7 @@ z okazji roku Majora Władysława Dybowskiego w Legnicy
     formatów od A4 do A0 lub B4 do B0, dotyczy to również prac przestrzennych. W
     przypadku znaczącego wykroczenia poza powyższy zakres, praca może zostać nie
     przyjęta. W razie wątpliwości prosimy o kontakt mailowy:
-    konkurs.plastyczny.legnica@gmail.com
+       <konkurs.plastyczny.legnica@gmail.com>
     5. Do konkursu będą przyjmowane wyłącznie oryginały dzieł. Jakiekolwiek
     reprodukcje i dzieła na nośnikach cyfrowych nie mogą brać udziału w konkursie.
     6. Prace biorące udział w Konkursie muszą stanowić własność autora.
@@ -82,16 +88,17 @@ z okazji roku Majora Władysława Dybowskiego w Legnicy
     8. Każdy z uczestników może zgłosić tylko jedną pracę.
     9. W konkursie nie mogą brać udziału prace zbiorowe.
     10. Regulamin konkursu dostępny jest na:
-     * [Konkursy Legnica]({{ site.url }}/konkurs-plastyczny.html)
+     * [Konkursy Legnica]({{ "" | relative_url }}/konkurs-plastyczny.html)
      * {% include icon-facebook.html fb_name="Konkurs Plastyczny" fb_id="100015251559033" %}
 
     11. Regulamin konkursu jest jedynym dokumentem określającym jego zasady.
     11. Do każdej pracy należy dołączyć wypełnioną kartę zgłoszeniową, którą
     zamieszczamy poniżej. Dokument należy wypełnić drukowanymi literami. Prace
     należy dostarczać wraz z kartą zgłoszeniową do dnia 31 marca 2017 roku na adres:
-    Spółdzielczy Dom Kultury "Kopernik", ul. Koziorożca 9 <span class="regulamin-tel">(tel. 76/72-30-982)</span> lub do
-    Młodzieżowego Centrum Kultury, ul. Mickiewicza 3, 59-220 Legnica
-    <span class="regulamin-tel">(tel. 76 72 33 340)</span>
+
+        * [Spółdzielczy Dom Kultury "Kopernik", ul. Koziorożca 9](https://www.facebook.com/SDK.Kopernik/) <span class="regulamin-tel">(tel. 76/72-30-982)</span> lub do
+        * [Młodzieżowego Centrum Kultury, ul. Mickiewicza 3, 59-220 Legnica](http://www.mck.art.pl/) <span class="regulamin-tel">(tel. 76 72 33 340)</span>  
+
     12. Uczestnictwo w konkursie oznacza wyrażenie zgody na: publiczną prezentację
     nadesłanych prac, a także zamieszczenie ich w materiałach promocyjnych konkursu.
     13. Uczestnik wyraża zgodę na nieodpłatne wykorzystanie zgłoszonej pracy na
@@ -104,20 +111,19 @@ z okazji roku Majora Władysława Dybowskiego w Legnicy
     17. Organizator zastrzega sobie prawo do zmian w regulaminie.
 
 
-1. Jury:
+1. **Jury:**
 
-    * Kryteria oceny prac: twórczość, pomysłowość i wyobraźnia w zakresie przedstawienia
-    tematu, ogólna estetyka wykonania pracy, stopień opanowania technik plastycznych.
-    * Oceny prac dokona powołane przez organizatora jury, które przyzna nagrody i
-    wyróżnienia.
-    * Wręczenie nagród odbędzie się podczas otwarcia wystawy pokonkursowej dnia ….
-    * Zwycięzcy i wyróżnieni w konkursie zostaną powiadomieni o wynikach telefonicznie
-    lub pocztą elektroniczną.
+   * Kryteria oceny prac: twórczość, pomysłowość i wyobraźnia w zakresie przedstawienia
+   tematu, ogólna estetyka wykonania pracy, stopień opanowania technik plastycznych.
+   * Oceny prac dokona powołane przez organizatora jury, które przyzna nagrody i
+   wyróżnienia.
+   * Wręczenie nagród odbędzie się podczas otwarcia wystawy pokonkursowej dnia ….
+   * Zwycięzcy i wyróżnieni w konkursie zostaną powiadomieni o wynikach telefonicznie
+   lub pocztą elektroniczną.
 
 
-Fundatorzy:
+**Fundatorzy:**
 
-Fundacja Pawła Jurosa
-
-Fundacja KGHM
+  * [Fundacja Pawła Jurosa](http://www.paweljuros.pl/)
+  * [Fundacja KGHM](http://fundacjakghm.pl/)
 
