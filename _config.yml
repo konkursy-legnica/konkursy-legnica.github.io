@@ -15,6 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Konkursy Legnica
 email: konkursy-legnica@gmail.com
+mail_plastyczny: konkurs.plastyczny.legnica@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Strona poświęcona konkursom przeprowadzanym w ramach Roku mjr Władysława
   Dybowskiego w Legnicy. Zadaniem strony jest udzielanie szczegółowych informacji
@@ -35,6 +36,12 @@ target_blank: >-
   target="_blank"
 #twitter_username: jekyllrb
 #github_username:  jekyll
+
+#Linki do ważnych stron
+sdk_kopernik: https://www.facebook.com/SDK.Kopernik/
+mck_legnica: http://www.mck.art.pl/
+nasz_git: https://konkursy-legnica.github.io
+nasz_fb: https://www.facebook.com/profile.php?id=100015251559033
 
 # Build settings
 markdown: kramdown

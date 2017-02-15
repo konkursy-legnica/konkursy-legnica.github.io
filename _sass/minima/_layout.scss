@@ -178,7 +178,8 @@ font-size: 178%;
 .page-content {
   padding-top: $spacing-unit;
   padding-bottom: $spacing-unit;
-  padding-left: 13%;
+  background-color: #101010;
+  //padding-left: 13%;
 }
 
 .page-heading {
@@ -202,6 +203,10 @@ font-size: 178%;
 .post-link {
   display: block;
   font-size: 24px;
+}
+
+.go-up-link {
+ text-align: center;
 }
 
 /**
