@@ -2,8 +2,8 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
+  //border-top: 5px solid $grey-color-dark;
+  //border-bottom: 1px solid $grey-color-light;
   min-height: 56px;
 
   // Positioning context for the mobile navigation icon
@@ -101,8 +101,8 @@ font-size: 178%;
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $grey-color-light;
-  padding: $spacing-unit 0;
+  //border-top: 1px solid $grey-color-light;
+  //padding: $spacing-unit 0;
   text-align: center;
 }
 
@@ -176,9 +176,8 @@ font-size: 178%;
  * Page content
  */
 .page-content {
-  padding-top: $spacing-unit;
-  padding-bottom: $spacing-unit;
-  background-color: #101010;
+  //padding-top: $spacing-unit;
+  //padding-bottom: $spacing-unit;
   //padding-left: 13%;
 }
 
@@ -206,6 +205,8 @@ font-size: 178%;
 }
 
 .go-up-link {
+ padding-top: 2%;
+ padding-bottom: 2%;
  text-align: center;
 }
 

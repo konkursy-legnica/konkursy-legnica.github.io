@@ -13,8 +13,8 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
-/*html {
-  background: url("../img/background.jpg") no-repeat center center fixed;
+html {
+  background: url("/stronka/img/background.jpg") no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -22,15 +22,16 @@ dl, dd, ol, ul, figure {
 }
 
 
-*/
+
 #bg {
   position: fixed;
 }
 
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  font-size: 120%;
   color: $text-color;
-  background-color: $background-color;
+  background-color: #00000000;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
      -moz-font-feature-settings: "kern" 1;
@@ -124,6 +125,10 @@ a {
   }
 }
 
+.icon-link img {
+ width: 3%;
+}
+
 /**
  * Blockquotes
  */
@@ -191,9 +196,23 @@ pre {
   }
 }
 
-main .wrapper {
- background-color: #201010;
+header .wrapper {
+  font-family: "Georgia";
+  padding-top: 2%;
+  background-color: #202020f8;
 }
+
+main .wrapper {
+ padding-top: 2%;
+ background-color: #201010f8;
+}
+
+footer .wrapper {
+ background-color: #202020f8;
+ padding-top: 5%;
+ padding-bottom: 5%;
+}
+
 
 
 /**
