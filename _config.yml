@@ -46,8 +46,19 @@ nasz_fb: https://www.facebook.com/profile.php?id=100015251559033
 # Build settings
 markdown: kramdown
 theme: minima
-gems:
-  - jekyll-feed
+#gems:
+#  - jekyll-feed
+
 exclude:
   - Gemfile
   - Gemfile.lock
+  - debug.html
+  - hidden
+
+defaults:
+  -
+    scope:
+      path: ""      # empty string for all files
+      type: posts   # limit to posts
+    values:
+      is_post: true # automatically set is_post=true for all posts

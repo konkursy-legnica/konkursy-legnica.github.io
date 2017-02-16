@@ -8,23 +8,25 @@
     {% assign url_first_part = page.url | remove_first: "/" | split: "/" | first | prepend: "/" %}
     {% case url_first_part %}
       {% when site.plasturl %}
-          {% include title-baner.html text="Konkurs Plastyczny" %}
+          {% include title-baner.html logo_url="/logo-plastyczny.svg" text="Konkurs Plastyczny" %}
           {% assign main_title = "Konkurs Plastyczny" %}
           {% assign lower_nav_pages = sub_pages_plastyczny%}
           {% capture news_ret_url %}/konkurs-plastyczny.html{% endcapture %}
 
       {% when site.muzurl %}
-          {% include title-baner.html text="Muzyka Wyklęta" %}
+          {% include title-baner.html logo_url="/logo-muzyka.svg" text="Muzyka Wyklęta"  %}
           {% assign main_title = "Muzyka Wyklęta" %}
           {% assign lower_nav_pages = sub_pages_muzyka%}
           {% capture news_ret_url %}/muzyka-wykleta.html{% endcapture %}
 
       {% else %}
-        {% include title-baner.html text=page.title %}
+
         {% case page.title %}
         {% when "Konkurs Plastyczny" %}
+          {% include title-baner.html logo_url="/logo-plastyczny.svg" text=page.title %}
           {% assign lower_nav_pages = sub_pages_plastyczny %}
         {% when "Muzyka Wyklęta" %}
+          {% include title-baner.html logo_url="/logo-muzyka.svg" text=page.title %}
           {% assign lower_nav_pages = sub_pages_muzyka %}
         {% endcase %}
     {% endcase %}
@@ -46,7 +48,12 @@
         {% endfor %}
       </div>
     </nav>
-    <nav class="site-nav lower-nav">
+
+    {% if page.is_post %}
+      {% assign post_nav="post-nav" %}
+    {% endif %}
+
+    <nav class="site-nav lower-nav {{ post_nav }}">
       <div class="trigger">
         {% include get-url-lvl url=page.url %}
         {% if url_lvl > 1 %}
