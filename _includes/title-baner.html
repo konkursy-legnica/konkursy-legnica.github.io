@@ -1,7 +1,13 @@
 <div id="top" class="baner-konkursy">
-  <div id="konkursy-rok">{{ include.text }}</div>
+  <div class="baner-logo-wrapper">
+    <img src="{{ site.imagesurl | relative_url }}{{ include.logo_url }}" alt="" onerror="this.src='{{ site.imagesurl | relative_url }}{{ include.logo_url | replace: "svg", "png" }}'" />
+  </div>
 
-  {% if include.main_page %}
-  <div id="konkursy">KONKURSY</div>
-  {% endif %}
+  <div class="baner-title-wrapper">
+    <div id="konkursy-rok">{{ include.text }}</div>
+
+    {% if include.main_page %}
+    <div id="konkursy">KONKURSY</div>
+    {% endif %}
+  </div>
 </div>

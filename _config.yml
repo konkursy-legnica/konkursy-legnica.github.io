@@ -22,7 +22,7 @@ description: > # this means to ignore newlines until "baseurl:"
   o wszystkich konkursach. Prezentowanie aktualności. Udostępnianie regulaminów,
   kart zgłoszeniowych, oraz materiałów multimedialnych związanych z konkursami.
   Zostaną tu również ogłoszone ich wyniki.
-baseurl: "/stronka" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 filesurl: "/do-pobrania" #Tu znajdują się regulaminy, karty i inne pliki do pobrania.
 imagesurl: "/img" #Tu obrazki będące częścią strony.

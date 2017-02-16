@@ -14,7 +14,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 html {
-  background: url("/stronka/img/background.jpg") no-repeat center center fixed;
+  background: url("/img/background.jpg") no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -198,8 +198,16 @@ pre {
 
 header .wrapper {
   font-family: "Georgia";
-  padding-top: 2%;
+  padding-top: 1%;
   background-color: #202020f8;
+}
+
+.baner-logo-wrapper {
+  margin-bottom: 1%;
+}
+
+.baner-logo-wrapper img {
+  width: 33%;
 }
 
 main .wrapper {
