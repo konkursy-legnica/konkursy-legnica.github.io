@@ -38,6 +38,19 @@ body {
        -o-font-feature-settings: "kern" 1;
           font-feature-settings: "kern" 1;
   font-kerning: normal;
+
+  @include media-query(702px) {
+    font-size: 90%;
+  }
+
+  @include media-query($on-palm) {
+    font-size: 66%;
+  }
+
+  @include media-query(408px) {
+    font-size: 50%;
+  }
+
 }
 
 
