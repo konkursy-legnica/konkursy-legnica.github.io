@@ -47,6 +47,10 @@ body {
     font-size: 66%;
   }
 
+  @include media-query(482px) {
+    font-size: 56%;
+  }
+
   @include media-query(408px) {
     font-size: 50%;
   }
@@ -212,6 +216,7 @@ pre {
 header .wrapper {
   font-family: "Georgia";
   padding-top: 1%;
+  padding-bottom: 0.6%;
   background-color: rgba(32,32,32,0.97);
 }
 
