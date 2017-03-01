@@ -42,6 +42,7 @@ sdk_kopernik: https://www.facebook.com/SDK.Kopernik/
 mck_legnica: http://www.mck.art.pl/
 nasz_git: https://konkursy-legnica.github.io
 nasz_fb: http://fb.me/konkurs.plastyczny
+fb_muz: https://www.facebook.com/Muzyka-Wykl%C4%99ta-962675663874706/
 zelezny: rokdybowskiego2017.webnode.com
 
 # Build settings
@@ -63,3 +64,16 @@ defaults:
       type: posts   # limit to posts
     values:
       is_post: true # automatically set is_post=true for all posts
+  -
+   scope:
+      path: "plastyczny"
+   values:
+      fb_name: Konkurs Plastyczny
+      fb_url: http://fb.me/konkurs.plastyczny
+
+  -
+   scope:
+      path: "muzyka-wykleta"
+   values:
+      fb_name: Muzyka Wyklęta
+      fb_url: https://www.facebook.com/Muzyka-Wykl%C4%99ta-962675663874706/

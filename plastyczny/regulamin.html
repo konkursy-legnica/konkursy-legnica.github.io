@@ -75,7 +75,7 @@ roku.</p>
 <p>po zakończeniu konkursu oraz na na naszych stronach internetowych:</p>
 <ul>
    <li><a href="{{ site.nasz_git }}">Konkursy Legnica</a></li>
-   <li><a href="{{ site.nasz_fb }}">Konkurs Plastyczny</a></li>
+   <li>{% include icon-facebook.html fb_name=page.fb_name fb_url=page.fb_url %}</li>
 </ul>
 </li>
 
@@ -103,7 +103,7 @@ roku.</p>
 <li> W konkursie nie mogą brać udziału prace zbiorowe.</li>
 <li> Regulamin konkursu dostępny jest na:
    <ul><li><a href="{{ site.nasz_git }}">Konkursy Legnica</a></li>
-  <li><a href="{{ site.nasz_fb }}">Konkurs Plastyczny</a></li></ul></li>
+  <li>{% include icon-facebook.html fb_name=page.fb_name fb_url=page.fb_url %}</li></ul></li>
 <li> Regulamin konkursu jest jedynym dokumentem określającym jego zasady.</li>
 <li> Do każdej pracy należy dołączyć wypełnioną <a href="{{ site.filesurl | relative_url }}/karta-zgloszeniowa-konkurs-plastyczny.pdf">kartę zgłoszeniową</a>, którą zamieszczamy
     na stronach. Dokument należy wypełnić drukowanymi literami. Prace należy
