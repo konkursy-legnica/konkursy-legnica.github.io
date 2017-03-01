@@ -273,7 +273,37 @@ footer .wrapper {
   clear: both;
 }
 
+.pinned-info-title {
+ color: #23b3cb;
+ //margin: 0.6%;
+ //padding-bottom: 0.6%;
+}
 
+.pinned-info-title span {
+  //border-bottom: #434a19 solid 2px;
+  padding-bottom: 0.6%;
+}
+
+.pinned-info-content {
+  padding-left: 5%;
+}
+
+
+.o-konkursie * {
+  margin-bottom: 5%;
+
+  padding-right: 6%;
+}
+
+.o-konkursie p {
+   padding-left: 5%;
+   text-align: justify;
+ }
+
+.o-konkursie h1 {
+   padding-left: 5%;
+  margin-top: 5%;
+}
 
 /**
  * Icons
