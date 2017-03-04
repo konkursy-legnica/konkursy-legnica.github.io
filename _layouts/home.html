@@ -7,7 +7,8 @@ layout: default
   {% include pinned-infos.html %}
 
 
-<h1 class="page-heading">Aktualności</h1>
+<div class="news-section">
+ <h2>Aktualności</h2>
 
     {{ content }}
 
@@ -19,7 +20,12 @@ layout: default
             <h2>
                <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
             </h2>
+            <div class="post-excerpt">
+            {{ post.excerpt | truncatewords: 30 }}
+            </div>
         </li>
         {% endfor %}
     </ul>
+
+</div>
 </div>
