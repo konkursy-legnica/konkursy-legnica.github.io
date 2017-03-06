@@ -16,6 +16,7 @@
 title: Konkursy Legnica
 email: konkursy-legnica@gmail.com
 mail_plastyczny: konkurs.plastyczny.legnica@gmail.com
+mail_muzyczny: konkurs.muzyczny.legnica@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Strona poświęcona konkursom przeprowadzanym w ramach Roku mjr Władysława
   Dybowskiego w Legnicy. Zadaniem strony jest udzielanie szczegółowych informacji
@@ -31,6 +32,7 @@ plastdir: "/plastyczny/"
 muzurl: "/muzyka-wykleta" #Tutaj wszystkie związane z Muzyką wyklętą.
 muzdir: "/muzyka-wykleta/"
 fbiconurl: "/fb_50.png" #Ikona facebooka.
+muz_form: "/zgloszenia.html"
 
 target_blank: >-
   target="_blank"
@@ -45,6 +47,7 @@ nasz_git: https://konkursy-legnica.github.io
 nasz_fb: http://fb.me/konkurs.plastyczny
 fb_muz: https://www.facebook.com/Muzyka-Wykl%C4%99ta-962675663874706/
 zelezny: rokdybowskiego2017.webnode.com
+regulamin_muz: https://konkursy-legnica.github.io/muzyka-wykleta/regulamin.html
 
 # Build settings
 markdown: kramdown
