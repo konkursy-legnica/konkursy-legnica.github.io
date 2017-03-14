@@ -19,9 +19,8 @@ mail_plastyczny: konkurs.plastyczny.legnica@gmail.com
 mail_muzyczny: konkurs.muzyczny.legnica@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Strona poświęcona konkursom przeprowadzanym w ramach Roku mjr Władysława
-  Dybowskiego w Legnicy. Zadaniem strony jest udzielanie szczegółowych informacji
-  o wszystkich konkursach. Prezentowanie aktualności. Udostępnianie regulaminów,
-  kart zgłoszeniowych, oraz materiałów multimedialnych związanych z konkursami.
+  Dybowskiego w Legnicy. Znajdują się tu szczegółowe informacje oraz aktualności na ich temat,
+  a także regulaminy, karty zgłoszeniowe, oraz materiały multimedialne związane z konkursami.
   Zostaną tu również ogłoszone ich wyniki.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
