@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="image_src" href="{{ site.imagesurl | relative_url }}/facebook-link-banner.jpg">
+  <meta property="og:image" content="{{ site.imagesurl | relative_url }}/facebook-link-banner.jpg" />
 
   {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
