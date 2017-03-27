@@ -4,8 +4,24 @@
 
     <div class="footer-col-wrapper">
       <div class="social-media-list-wrapper">
-            {% include go-up.html %}        
+            {% include go-up.html %}
       </div>
+
+      {% assign url_first_part = page.url | remove_first: "/" | split: "/" | first | prepend: "/" %}
+      
+      {% case url_first_part %}
+        {% when site.plasturl %}
+          {% include footer-plast.html %}
+        {% when site.muzurl %}
+          {% include footer-muzyka.html %}
+        {% else %}
+          {% case page.title %}
+          {% when "Konkurs Plastyczny" %}
+            {% include footer-plast.html %}
+          {% when "Muzyka Wyklęta" %}
+            {% include footer-muzyka.html %}
+          {% endcase %}
+      {% endcase %}
 
     </div>
   </div>
