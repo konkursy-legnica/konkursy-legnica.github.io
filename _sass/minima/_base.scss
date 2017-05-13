@@ -351,6 +351,22 @@ footer .wrapper {
   margin-right: 3%;
   margin-left: 3%;
 }
+
+#miejsce-i-czas-imprezy * {
+  padding-left: 4%;
+}
+
+#miejsce-i-czas-imprezy p:first-child {
+  padding-left: 0%;/* limits the scope of the previous rule */
+}
+
+#wstep * {
+  padding-left: 4%;
+}
+
+#wstep p:first-child {
+  padding-left: 0%;/* limits the scope of the previous rule */
+}
 // .about-plastyczny * {
 //  margin-bottom: 1%;
 // }
