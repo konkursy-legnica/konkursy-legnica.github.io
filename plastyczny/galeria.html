@@ -1,0 +1,56 @@
+---
+title: Galeria prac
+layout: konkurs
+priorytet_menu: 3
+images:
+  - title: Wiktoria Zamkowska zdobywczyni 1 miejsca
+    img_path: /img/galeria/nagrodzone/2.jpg
+  - title: 2 miejsce
+    img_path: /img/galeria/nagrodzone/3.jpg
+  - title: 2 miejsce
+    img_path: /img/galeria/nagrodzone/4.jpg
+  - title: wyróżnienie
+    img_path: /img/galeria/prace/3.jpg
+  - title:
+    img_path: /img/galeria/prace/1.jpg
+  - title:
+    img_path: /img/galeria/prace/2a.jpg
+  - title:
+    img_path: /img/galeria/prace/2b.jpg
+  - title:
+    img_path: /img/galeria/prace/4.jpg
+  - title:
+    img_path: /img/galeria/prace/5.jpg
+  - title:
+    img_path: /img/galeria/rozdanie/1.jpg
+  - title:
+    img_path: /img/galeria/rozdanie/rozdanie-1.jpg
+  - title:
+    img_path: /img/galeria/rozdanie/rozdanie-2.jpg
+  - title:
+    img_path: /img/galeria/rozdanie/rozdanie-3.jpg
+  - title:
+    img_path: /img/galeria/rozdanie/rozdanie-4.jpg
+  - title:
+    img_path: /img/galeria/rozdanie/rozdanie-5.jpg
+  - title:
+    img_path: /img/galeria/rozdanie/rozdanie-6.jpg
+  - title:
+    img_path: /img/galeria/rozdanie/rozdanie-7.jpg
+  - title:
+    img_path: /img/galeria/rozdanie/rozdanie-8.jpg
+---
+<article class="about-plastyczny">
+<header><h1>Galeria:</h1></header>
+
+<div>
+<ul class="galeria">
+  {% for image in page.images %}
+    <li><a href="{{ image.img_path }}" target="_blank"><img src="{{ image.img_path }}" title="{{ image.title }}" alt="{{ image.title}}"/></a></li>
+  {% endfor %}
+</ul>
+</div>
+
+
+<div style="text-align: center"><p>Fot. <a href="https://www.facebook.com/SDK.Kopernik/posts/1166404673505803" target="_blank" rel="nofollow">SDK Kopernik</a></p></div>
+</article>

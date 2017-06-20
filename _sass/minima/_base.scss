@@ -383,6 +383,16 @@ footer .wrapper {
   }
 }
 
+.galeria {
+  list-style-type: none;
+  margin-left: 0px;
+  text-align: center;
+}
+
+.galeria li {
+  margin-bottom: 3%;
+}
+
 @keyframes anim-alert {
   0% {color: #ff5000;}
   50% {color: yellow;}
